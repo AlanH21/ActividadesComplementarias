@@ -22,6 +22,7 @@ if ($_POST) {
   	}
  ?>
 
+<title>Agregar Actividad</title>
 
 <?php
 //Header-------------------------------->
@@ -30,17 +31,17 @@ if ($_POST) {
 
 <div class="container">
 	<div class="col s12">
-		<h3>Agregar actividades complementarias</h3>
+		<h3>Agregar Actividad</h3>
 	    	<form method="post" class="col s5">
 		      	<div class="row">
 					<div class="input-field col s5">
-	          			<input placeholder="Clave de la actividad complementaria." name="clave_act" type="text">
+	          			<input placeholder="Clave de la Actividad" name="clave_act" type="text">
 	       			</div>
 				</div>
 
 				<div class="row">
 					<div class="input-field col s12">
-	          		<input placeholder="Nombre de la actividad complementaria." name="nombre_complementarias" type="text">
+	          		<input placeholder="Nombre de la Actividad" name="nombre_complementarias" type="text">
 	       			</div>
 				</div>
 				<input  name="boton" class="btn waves-effect waves-light cyan" type="submit" value="Agregar" />
@@ -53,11 +54,12 @@ if ($_POST) {
 	<div class="col s12">
 <hr>
 <br>
+<h3>Actividades</h3>
 		<table class="striped">
 				<thead>
 					<tr>
-					   	<th>Clave</th>
-					   	<th>Nombre de complementarias</th>
+					   	<th class="center">Clave</th>
+					   	<th class="center">Nombre de Actividad</th>
 
 					</tr>
 				</thead>

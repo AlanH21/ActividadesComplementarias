@@ -52,6 +52,9 @@
 	$statement_status->execute($arr);
 	$resultados_tabla = $statement_status->fetchAll();
 ?>
+
+<title>B_E_E_Alumnos</title>
+
 <?php
 	include '../extend/header.php';
  ?>
@@ -59,10 +62,10 @@
  <div class="container">
  	<div class="col s12">
  		<form method="get">
-      			<h2 class="card-title">Buscador de alumnos</h2>
+      			<h2 class="card-title">Buscar Estudiantes</h2>
         		<div class="input-field col s12">
          		<input type="text" id="autocomplete-input" name="nombre_estudiante" class="autocomplete">
-         		<label for="autocomplete-input">Ingrese el nombre del departamento</label>
+         		<label for="autocomplete-input">Ingrese el Nombre del Estudiante</label>
          			<input class="waves-effect waves-light btn cyan" type="submit" value="Buscar">
        			</div>
        		</form>
@@ -77,6 +80,7 @@
 <div class="container col s12 row">
 	<div class="card">
 		<div class="card-content">
+			<h3>Modificar Estudiante</h3>
 		<form method="post">
 		 	<div class="row">
 				<div class="input-field col s12">
@@ -151,13 +155,13 @@
 
 				<thead>
 					<tr>
-					   	<th>No Control</th>
-					   	<th>Nombre</th>
-					    <th>Apellido Paterno</th>
-						<th>Apellido Materno</th>
-					    <th>Semestre</th>
-					    <th>Carrera</th>
-					    <th colspan="2">Acción</th>
+					   	<th class="center">No Control</th>
+					   	<th class="center">Nombre</th>
+					    <th class="center">Apellido Paterno</th>
+						<th class="center">Apellido Materno</th>
+					    <th class="center">Semestre</th>
+					    <th class="center">Carrera</th>
+					    <th class="center" colspan="2">Acción</th>
 					</tr>
 				</thead>
 

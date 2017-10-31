@@ -36,6 +36,7 @@ require_once('../conexion/conexion.php');
 
 ?>
 
+<title>Agregar Instructor</title>
 
 <?php
 	include('../extend/header.php');
@@ -49,19 +50,19 @@ require_once('../conexion/conexion.php');
 
 		      	<div class="row">
 					<div class="input-field col s5">
-	          		<input placeholder="Rfc del departamento" name="rfc_instructor" type="text">
+	          		<input placeholder="RFC del Instructor" name="rfc_instructor" type="text">
 	       			</div>
 				</div>
 
 				<div class="row">
 
 				<div class="input-field col s4">
-				<input placeholder="Nombre del instructor" name="nombre_instructor" type="text">
+				<input placeholder="Nombre del Instructor" name="nombre_instructor" type="text">
 				</div>
 
 
 				<div class="input-field col s4">
-				<input placeholder="Apellido paterno" name="apellido_p_instructor" type="text">
+				<input placeholder="Apellido Paterno" name="apellido_p_instructor" type="text">
 				</div>
 
 
@@ -72,7 +73,7 @@ require_once('../conexion/conexion.php');
 				<div class="row">
         			<div class="input-field col s12">
 	                	<select name="act_complementaria_clave_act">
-	                		<option value="" disabled selected>Elige instructor</option>
+	                		<option value="" disabled selected>Elige la Actividad</option>
 		                		<?php
 						    		foreach($results_datos as $rss) {
 						       	?>
@@ -81,7 +82,7 @@ require_once('../conexion/conexion.php');
 						       		}
 						      	?>
 						</select>
-						<label>Actividad complementaria</label>
+						<label>Actividad Complementaria</label>
 					</div>
         		</div>
 
@@ -101,11 +102,11 @@ require_once('../conexion/conexion.php');
 			<table class="striped">
 			<thead>
 			    <tr>
-			    	<th class="center">Rfc</th>
+			    	<th class="center">RFC</th>
 			       	<th class="center">Nombre</th>
 			       	<th class="center">Apellido Paterno</th>
 			       	<th class="center">Apellido Materno</th>
-			       	<th class="center">Actividad complementaria</th>
+			       	<th class="center">Actividad Complementaria</th>
 
 			    </tr>
 			</thead>

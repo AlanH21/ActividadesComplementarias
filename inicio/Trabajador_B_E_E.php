@@ -47,9 +47,10 @@ require_once('../conexion/conexion.php');
 				$rs_campo = $result_details[0];
 		}
 
-
-
 ?>
+
+<title>B_E_E_Trabajador</title>
+
 <?php
 	include('../extend/header.php');
 ?>
@@ -57,10 +58,10 @@ require_once('../conexion/conexion.php');
 <div class="container">
 	<div class="col s12">
 		<form method="get">
-      			<h2 class="card-title">Buscar trabajador</h2>
+      			<h2 class="card-title">Buscar Trabajador</h2>
         		<div class="input-field col s12">
          		<input type="text" id="autocomplete-input" name="nombre_trabajador" class="autocomplete">
-         		<label for="autocomplete-input">Ingrese el nombre del departamento</label>
+         		<label for="autocomplete-input">Ingrese el Nombre del Departamento</label>
          			<input class="waves-effect waves-light btn cyan" type="submit" value="Buscar">
        			</div>
        		</form>
@@ -73,7 +74,7 @@ require_once('../conexion/conexion.php');
 <div class="container col s12 row">
 	<div class="card">
 		<div class="card-content">
-		<h3 class="card-title">Modificar trabajador</h3>
+		<h2>Modificar Trabajador</h2>
 		<form method="post">
 
 			<div class="row">
@@ -113,11 +114,11 @@ require_once('../conexion/conexion.php');
 		<div class="row">
 
 
-			<h2 class="card-title">Trabajador</h2>
+			<h2>Trabajadores</h2>
 			<table class="striped">
 			<thead>
 			    <tr>
-			    	<th class="center">Rfc</th>
+			    	<th class="center">RFC</th>
 			       	<th class="center">Nombre</th>
 			       	<th class="center">Apellido Paterno</th>
 			       	<th class="center">Apellido Materno</th>

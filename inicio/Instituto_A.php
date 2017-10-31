@@ -23,6 +23,9 @@
 
 
 ?>
+
+<title>Agregar Instituto</title>
+
 <?php
 //Header-------------------------------->
  	include('../extend/header.php');
@@ -31,18 +34,18 @@
 
 <div class="container">
 	<div class="col s12">
-		<h3 class="card-title">Agregar nuevo instituto</h3>
+		<h3 class="card-title">Agregar Instituto</h3>
 
 	    	<form  method="post" class="col s5" >
 		      	<div class="row">
 					<div class="input-field col s5">
-	          			<input placeholder="Clave del instituto" name="clave_instituto" type="text">
+	          			<input placeholder="Clave del Instituto" name="clave_instituto" type="text">
 	       			</div>
 				</div>
 
 				<div class="row">
 					<div class="input-field col s12">
-	          		<input placeholder="Nombre del instituto" name="nombre_instituto" type="text">
+	          		<input placeholder="Nombre del Instituto" name="nombre_instituto" type="text">
 	       			</div>
 				</div>
 
@@ -57,7 +60,7 @@
 		<div class="row">
 
 
-			<h2 class="card-title">Departamento</h2>
+			<h2 class="card-title">Instituto</h2>
 			<table class="striped">
 			<thead>
 			    <tr>

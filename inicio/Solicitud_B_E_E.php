@@ -68,6 +68,9 @@ require_once('../conexion/conexion.php');
 
 
 ?>
+
+<title>B_E_E_Solicitud</title>
+
 <?php
 	include('../extend/header.php');
 ?>
@@ -75,10 +78,10 @@ require_once('../conexion/conexion.php');
 <div class="container">
 	<div class="col s12">
 		<form method="get">
-      			<h2 class="card-title">Buscar solicitud</h2>
+      			<h2 class="card-title">Buscar Solicitud</h2>
         		<div class="input-field col s12">
          		<input type="text" id="autocomplete-input" name="estudiante_No_contro" class="autocomplete">
-         		<label for="autocomplete-input">Ingrese el nombre del departamento</label>
+         		<label for="autocomplete-input">Ingrese el Nombre del Departamento</label>
          			<input class="waves-effect waves-light btn cyan" type="submit" value="Buscar">
        			</div>
        		</form>
@@ -91,7 +94,7 @@ require_once('../conexion/conexion.php');
 <div class="container">
 	<div class="col s12">
 		<div class="row">
-		<h3>Modificar solicitud</h3>
+		<h3>Modificar Solicitud</h3>
 		<form method="post">
 
 			<div class="row">
@@ -104,6 +107,11 @@ require_once('../conexion/conexion.php');
 				<div class="input-field col s4">
 					<input value="<?php echo $rs_campo['asunto'] ?>" type="text" name="asunto">
 				</div>
+
+				<div class="row">
+					<div class="input-field col s4">
+						<input value="<?php echo $rs_campo['fecha'] ?>" type="text" name="fecha">
+					</div>
 
 
 				<div class="input-field col s4">
@@ -151,7 +159,7 @@ require_once('../conexion/conexion.php');
 	                		<?php
 					    		foreach($alumno as $rl) {
 					    	?>
-	  						<option value="<?php echo $rl['No_control']?>" <?php $selected = ($rs_campo['No_control'] == $rl['No_control'])?"SELECTED":""; echo $selected?>><?php echo $rl['No_control']?></option>
+	  						<option value="<?php echo $rl['No_control']?>" <?php $selected = ($rs_campo['nombre_estudiante'] == $rl['No_control'])?"SELECTED":""; echo $selected?>><?php echo $rl['nombre_estudiante']?></option>
 	  						<?php
 					    		}
 					    	?>
@@ -172,19 +180,22 @@ require_once('../conexion/conexion.php');
 	}
  ?>
 
- <div class="row">
-    <div class="col s12">
-    <h3 class="card-title">Datos solicitud</h3>
-    <table class="responsive-table">
+ <div class="container">
+	<div class="col s12">
+		<div class="row">
+
+    <h2>Solicitudes</h2>
+    <table class="striped">
 	    <thead>
            	<tr>
-	            <th>Instituto</th>
-				<th>Folio</th>
-				<th>Asunto</th>
-				<th>Fecha</th>
-				<th>Lugar</th>
-				<th>Instructor</th>
-				<th>No control</th>
+	            <th class="center">Instituto</th>
+				<th class="center">Folio</th>
+				<th class="center">Asunto</th>
+				<th class="center">Fecha</th>
+				<th class="center">Lugar</th>
+				<th class="center">Instructor</th>
+				<th class="center">No control</th>
+				<th class="center" colspan="2">Acción</th>
             </tr>
         </thead>
 

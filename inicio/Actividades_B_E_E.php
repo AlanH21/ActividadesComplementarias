@@ -45,7 +45,7 @@ if($_POST) {
 ?>
 
 
-
+<title>B_E_E_Actividad</title>
 
 
 <?php
@@ -56,10 +56,11 @@ if($_POST) {
 <br>
 <div class="container col s12 ">
 	<form method="get">
+		<h2 class="card-title">Buscar Actividad</h2>
         			<div class="input-field ">
         				<div class="col s7">
         					<input type="text" id="autocomplete-input" name="nombre_complementarias" class="autocomplete">
-	         			<label for="autocomplete-input">Buscar</label>
+	         			<label for="autocomplete-input">Nombre Actividad</label>
 
         				</div>
 
@@ -77,7 +78,7 @@ if($_POST) {
 <div class="container col s12 row">
 	<div class="card">
 		<div class="card-content">
-		<h3 class="card-title">Modificar actividad complementaria</h3>
+<h3>Modificar Actividad</h3>
 		<form method="post">
 			<div class="row">
 				<div class="input-field col s12">
@@ -106,13 +107,13 @@ if($_POST) {
 
 
 			<br>
-			<h3 >Actividades complementarias</h3>
+			<h3 >Actividades</h3>
 
 			<table >
 				<thead>
 					<tr>
 					   	<th class="center">Clave</th>
-					   	<th class="center">Nombre de complementarias</th>
+					   	<th class="center">Nombre Actividad</th>
 					    <th class="center" colspan="2">Acción</th>
 					</tr>
 				</thead>

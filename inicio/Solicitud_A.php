@@ -44,13 +44,15 @@ require_once('../conexion/conexion.php');
 
 ?>
 
+<title>Agregar Solicitud</title>
+
 <?php
 	include('../extend/header.php');
 ?>
 
 <div class="container">
 	<div class="col s12">
-		<h3>Agregar una nueva carrera</h3>
+		<h3>Agregar Solicitud</h3>
 	    	<form method="post" class="col s5">
 		      	<div class="row">
 					<div class="input-field col s12">
@@ -62,6 +64,10 @@ require_once('../conexion/conexion.php');
 					<div class="input-field col s4">
 	          		<input placeholder="Asunto" name="asunto" type="text">
 	       			</div>
+
+							<div class="input-field col s4">
+			          		<input placeholder="Fecha(AAAA-MM-DD)" name="fecha" type="text">
+			       			</div>
 
 					<div class="input-field col s4">
 	          		<input placeholder="Lugar" name="lugar" type="text">
@@ -104,7 +110,7 @@ require_once('../conexion/conexion.php');
 		                	<?php
 								foreach($alumno as $rl) {
 							?>
-		  					<option value="<?php echo $rl['No_control']?>"><?php echo $rl['No_control']?>
+		  					<option value="<?php echo $rl['No_control']?>"><?php echo $rl['nombre_estudiante']?>
 	  								</option>
 		  					<?php
 						    	}
@@ -119,19 +125,21 @@ require_once('../conexion/conexion.php');
 </div>
 
 
-<div class="row">
+<div class="container col s12 row">
     <div class="col s12">
-    <h3 class="card-title">Datos solicitud</h3>
-    <table class="responsive-table">
+    <h2>Solicitudes</h2>
+    <table class="striped">
 	    <thead>
-           	<tr>
-	            <th>Instituto</th>
-				<th>Folio</th>
-				<th>Asunto</th>
-				<th>Fecha</th>
-				<th>Lugar</th>
-				<th>Rfc</th>
-				<th>Instructor</th>
+        <tr>
+	      <th class="center">Instituto</th>
+				<th class="center">Folio</th>
+				<th class="center">Asunto</th>
+				<th class="center">Fecha</th>
+				<th class="center">Lugar</th>
+				<th class="center">RFC Instructor</th>
+				<th class="center">Nombre Instructor</th>
+				<th class="center">N° Control Estudiante</th>
+				<th class="center">Estudiante</th>
             </tr>
         </thead>
 
@@ -147,7 +155,9 @@ require_once('../conexion/conexion.php');
 				<td><?php echo $rs['fecha']?></td>
 				<td><?php echo $rs['lugar']?></td>
 				<td><?php echo $rs['instructor_rfc'] ?></td>
+				<td> <?php echo $rs['nombre_instructor'] ?></td>
 				<td> <?php echo $rs['estudiante_No_contro'] ?></td>
+				<td> <?php echo $rs['nombre_estudiante'] ?></td>
             </tr>
             <?php
 			   	}

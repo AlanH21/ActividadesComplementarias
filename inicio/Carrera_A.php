@@ -1,7 +1,7 @@
-<?php 
+<?php
 	require_once('../conexion/conexion.php');
 
-	$sql = 'SELECT * FROM carrera';
+	$sql = 'SELECT * FROM carrera ORDER by nombre_carrera';
 
 	$statement = $pdo->prepare($sql);
 	$statement->execute(array());
@@ -19,6 +19,7 @@ if ( $_POST ) {
 			}
  ?>
 
+<title>Agregar Carrera</title>
 
 <?php
 //Header-------------------------------->
@@ -27,17 +28,17 @@ if ( $_POST ) {
 
 <div class="container">
 	<div class="col s12">
-		<h3>Agregar una nueva carrera</h3>
+		<h3>Agregar Carrera</h3>
 	    	<form method="post" class="col s5">
 		      	<div class="row">
 					<div class="input-field col s5">
-	          			<input placeholder="Clave de la carrera." name="clave_carrera" type="text">
+	          			<input placeholder="Clave de la Carrera" name="clave_carrera" type="text">
 	       			</div>
 				</div>
 
 				<div class="row">
 					<div class="input-field col s12">
-	          		<input placeholder="Nombre de la carrera" name="nombre_carrera" type="text">
+	          		<input placeholder="Nombre de la Carrera" name="nombre_carrera" type="text">
 	       			</div>
 				</div>
 				<input  name="boton" class="btn waves-effect waves-light cyan" type="submit" value="Agregar" />
@@ -55,7 +56,7 @@ if ( $_POST ) {
 				<thead>
 					<tr>
 					   	<th class="center">Clave</th>
-					   	<th class="center">Nombre de la carrera</th>
+					   	<th class="center">Nombre de la Carrera</th>
 
 					</tr>
 				</thead>

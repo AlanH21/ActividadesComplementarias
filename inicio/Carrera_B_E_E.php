@@ -2,7 +2,7 @@
 	require_once('../conexion/conexion.php');
 
 	//Consulta principal para la busqueda y llenado tabla
-	$sql = 'SELECT * FROM carrera WHERE nombre_carrera LIKE :search ORDER by clave_carrera ASC';
+	$sql = 'SELECT * FROM carrera WHERE nombre_carrera LIKE :search ORDER by nombre_carrera ASC';
 	$search = isset($_GET['nombre_carrera'])? $_GET['nombre_carrera']: '';
 	$arr[':search']= '%' . $search . '%';
 	$statement = $pdo->prepare($sql);
@@ -41,6 +41,8 @@
 
  ?>
 
+<title>B_E_E_Carrera</title>
+
 <?php
  	include('../extend/header.php');
 ?>
@@ -50,10 +52,10 @@
 	<div class="row">
 		<div class="col s12">
 			<form method="get">
-      			<h2 class="card-title">Buscador de carrera</h2>
+      			<h2 class="card-title">Buscar Carrera</h2>
         		<div class="input-field col s12">
          		<input type="text" id="autocomplete-input" name="nombre_carrera" class="autocomplete">
-         		<label for="autocomplete-input">Ingrese el nombre de la carrera</label>
+         		<label for="autocomplete-input">Ingrese el Nombre de la Carrera</label>
          			<input class="waves-effect waves-light btn cyan" type="submit" value="Buscar" >
        			</div>
        		</form>
@@ -67,7 +69,7 @@
 <div class="container ">
 	<div class="row ">
 		<div class="col s12">
-		<h3>Modificar carreras</h3>
+		<h3>Modificar Carrera</h3>
 		<form method="post">
 			<div class="row">
 				<div class="input-field col s12">

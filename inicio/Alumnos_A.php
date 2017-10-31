@@ -41,6 +41,8 @@
 
 ?>
 
+<title>Agregar Alumno</title>
+
 <?php
 	include '../extend/header.php';
  ?>
@@ -49,12 +51,12 @@
 
 <div class="container">
 	<div class="col s12">
-		<h3 class="card-title">Agregar un nuevo estudiante</h3>
+		<h3>Agregar Estudiante</h3>
 
 			<form method="post" >
 						<div class="row">
 							<div class="input-field col s12">
-          						<input placeholder="Número de control" name="No_control" type="text">
+          						<input placeholder="Número de Control" name="No_control" type="text">
        						</div>
 						</div>
 
@@ -123,12 +125,12 @@
 
 				<thead>
 					<tr>
-					   	<th>No Control</th>
-					   	<th>Nombre</th>
-					    <th>Apellido Paterno</th>
-						<th>Apellido Materno</th>
-					    <th>Semestre</th>
-					    <th>Carrera</th>
+					   	<th class="center">No Control</th>
+					   	<th class="center">Nombre</th>
+					    <th class="center">Apellido Paterno</th>
+						<th class="center">Apellido Materno</th>
+					    <th class="center">Semestre</th>
+					    <th class="center">Carrera</th>
 					</tr>
 				</thead>
 

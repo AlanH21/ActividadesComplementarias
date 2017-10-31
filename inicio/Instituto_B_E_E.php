@@ -46,6 +46,8 @@
 
 ?>
 
+<title>B_E_E_Instituto</title>
+
 <?php
 	include('../extend/header.php');
  ?>
@@ -53,10 +55,10 @@
 	<div class="container">
 		<div class="col s12">
 			<form method="get">
-      			<h2 class="card-title">Buscador de departamento</h2>
+      			<h2 class="card-title">Buscar Departamento</h2>
         		<div class="input-field col s12">
          		<input type="text" id="autocomplete-input" name="nombre_instituto" class="autocomplete">
-         		<label for="autocomplete-input">Ingrese el nombre del departamento</label>
+         		<label for="autocomplete-input">Ingrese el Nombre del Departamento</label>
          			<input class="waves-effect waves-light btn cyan" type="submit" value="Buscar">
        			</div>
        		</form>
@@ -69,7 +71,7 @@
 <div class="container col s12 row">
 	<div class="col s12">
 		<div class="row">
-		<h3>Modificar actividad complementaria</h3>
+		<h3>Modificar Instituto</h3>
 		<form method="post">
 			<div class="row">
 				<div class="input-field col s12">
@@ -100,7 +102,7 @@
 	<div class="card">
 		<div class="card-content">
 
-			<h2 class="card-title">Departamento</h2>
+			<h2>Institutos</h2>
 			<table class="striped">
 			<thead>
 			    <tr>

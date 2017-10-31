@@ -29,6 +29,8 @@ if ( $_POST ) {
 
  ?>
 
+ <title>Agregar Departamento</title>
+
 <?php
 //Header-------------------------------->
  	include('../extend/header.php');
@@ -36,18 +38,18 @@ if ( $_POST ) {
 
 <div class="container">
 	<div class="col s12">
-		<h3 >Agregar actividades complementarias</h3>
+		<h3>Agregar Departamento</h3>
 
 	    	<form method="post"  >
 		      	<div class="row">
 					<div class="input-field col s5">
-	          			<input placeholder="Rfc del departamento" name="rfc_departamento" type="text">
+	          			<input placeholder="Rfc del Departamento" name="rfc_departamento" type="text">
 	       			</div>
 				</div>
 
 				<div class="row">
 					<div class="input-field col s12">
-	          		<input placeholder="Nombre del departamento" name="nombre_departamento" type="text">
+	          		<input placeholder="Nombre del Departamento" name="nombre_departamento" type="text">
 	       			</div>
 				</div>
 
@@ -78,13 +80,13 @@ if ( $_POST ) {
 	<div class="col s12">
 		<div class="row">
 
-			<h2 class="card-title">Departamento</h2>
+			<h2>Departamentos</h2>
 			<table class="striped">
 			<thead>
 			    <tr>
-			    	<th class="center">Rfc</th>
+			    	<th class="center">RFC</th>
 			       	<th class="center">Departamento</th>
-			       	<th class="center">Rfc Trabajador</th>
+			       	<th class="center">RFC Trabajador</th>
 			       	<th class="center">Nombre</th>
 			       	<th class="center">Apellido Paterno</th>
 			       	<th class="center">Apellido Materno</th>

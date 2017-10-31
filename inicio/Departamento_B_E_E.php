@@ -59,6 +59,9 @@ require_once('../conexion/conexion.php');
 
 
 ?>
+
+<title>B_E_E_Departamento</title>
+
 <?php
 	include('../extend/header.php');
  ?>
@@ -66,10 +69,10 @@ require_once('../conexion/conexion.php');
  <div class="container">
  	<div class="col s12">
  		<form method="get">
-      			<h2 class="card-title">Buscador de departamento</h2>
+      			<h2 class="card-title">Buscar Departamento</h2>
         		<div class="input-field col s12">
          		<input type="text" id="autocomplete-input" name="nombre_departamento" class="autocomplete">
-         		<label for="autocomplete-input">Ingrese el nombre del departamento</label>
+         		<label for="autocomplete-input">Ingrese el Nombre del Departamento</label>
          			<input class="waves-effect waves-light btn cyan" type="submit" value="Buscar">
        			</div>
        		</form>
@@ -83,7 +86,7 @@ require_once('../conexion/conexion.php');
 <div class="container">
 	<div class="col s12">
 		<div class="row">
-		<h3 class="card-title">Modificar departamento</h3>
+		<h3 class="card-title">Modificar Departamento</h3>
 		<form method="post">
 			<div class="row">
 				<div class="input-field col s12">
@@ -98,7 +101,7 @@ require_once('../conexion/conexion.php');
 			<div class="row">
         		<div class="input-field col s12">
 	                <select name="trabajador_rfc">
-	                	<option value="" disabled selected>Eliga trabajador</option>
+	                	<option value="" disabled selected>Eliga Trabajador</option>
 	                	<?php
 							foreach($results_datos as $rs) {
 						?>
@@ -126,13 +129,13 @@ require_once('../conexion/conexion.php');
 		<div class="row">
 
 
-			<h2 >Departamento</h2>
+			<h2 >Departamentos</h2>
 			<table class="striped">
 			<thead>
 			    <tr>
-			    	<th class="center">Rfc</th>
+			    	<th class="center">RFC</th>
 			       	<th class="center">Departamento</th>
-			       	<th class="center">Rfc Trabajador</th>
+			       	<th class="center">RFC Trabajador</th>
 			       	<th class="center">Nombre</th>
 			       	<th class="center">Apellido Paterno</th>
 			       	<th class="center">Apellido Materno</th>
