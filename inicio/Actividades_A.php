@@ -19,6 +19,8 @@ if ($_POST) {
   		$statement_insert = $pdo->prepare($sql_insert);
   		$statement_insert->execute(array($clave,$nombre));
 
+			header('Location: Actividades_A.php');
+
   	}
  ?>
 

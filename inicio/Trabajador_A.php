@@ -18,6 +18,8 @@ if ( $_POST ) {
 
 		$statement_insert = $pdo->prepare($insertar);
 	  	$statement_insert->execute(array($ac,$nombre_depart,$p,$m));
+
+			header('Location: Trabajador_A.php');
 }
  ?>
 

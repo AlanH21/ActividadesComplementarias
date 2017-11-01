@@ -16,6 +16,8 @@ if ( $_POST ) {
 
 				$statement_insert = $pdo->prepare($insertar_act);
 			  	$statement_insert->execute(array($act_clave,$nombre_complementarias));
+
+					header('Location: Carrera_A.php');
 			}
  ?>
 
